@@ -8,6 +8,9 @@ def valid_move?(board, player_input)
   end
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def position_taken?(board, location)
-  !(board[location].nil? || board[location] == " " || board[location] == "")
+def position_taken?(board, position)
+  if  return false if [" ", "", nil].include?(board[position])
+  return true if ["X", "O"].include?(board[position])
+  raise "#{board[position]} is not a valid move"
+end
 end
