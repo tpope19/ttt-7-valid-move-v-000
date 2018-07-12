@@ -1,5 +1,4 @@
 # code your #valid_move? method here
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 player_input = 0
 
 def valid_move?(board, player_input)
