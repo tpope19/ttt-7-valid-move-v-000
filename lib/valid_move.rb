@@ -1,6 +1,4 @@
 # code your #valid_move? method here
-player_input = 0
-
 def valid_move?(board, player_input)
   player_input = player_input.to_i
   if player_input.between?(1,9) && position_taken?(board, player_input -1) == false
