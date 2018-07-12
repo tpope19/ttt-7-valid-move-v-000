@@ -9,5 +9,5 @@ def valid_move?(board, player_input)
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, location)
-  !(board[location].nil? || board[location] == " " || board[location] == "") && (board[location] == "X" || board[location] == "O")
+  !(board[location].nil? || board[location] == " " || board[location] == "") && !(board[location] == "X" || board[location] == "O")
 end
