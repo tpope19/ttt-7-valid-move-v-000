@@ -11,7 +11,8 @@ end
 def position_taken?(board, player_input)
   if board[player_input] == "X" || board[player_input] == "O"
     true
-  else board[player_input] == " " || board[player_input] == "" || board[player_input] = "nil"
+  elsif condition
+     board[player_input] == " " || board[player_input] == "" || board[player_input] = "nil"
     false
   end
 end
